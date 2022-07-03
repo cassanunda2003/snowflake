@@ -4,11 +4,8 @@ import matchers._
 
 class SnowflakesSpec extends AnyFlatSpec with should.Matchers {
     
-    "rotateRight" should "rotate an list of ints one to the right" in {
-        Snowflakes.rotateRight(List(1,2,3,4,5,6)) should be (List(6, 1, 2, 3, 4, 5))
-    }
-    "rotateLeft" should "rotate a list of ints one to the left" in {
-        Snowflakes.rotateLeft(List(1,2,3,4,5,6)) should be (List(2, 3, 4, 5, 6, 1))
+    "rotate" should "rotate an list of ints one to the right" in {
+        Snowflakes.rotate(List(1,2,3,4,5,6)) should be (List(6, 1, 2, 3, 4, 5))
     }
 
     "matchRight" should "match alike snowflakes" in {
